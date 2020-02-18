@@ -13,6 +13,10 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
@@ -40,14 +44,13 @@ ul {
 
 /* navbar */
 #navbar {
-  background-color: rgb(53, 93, 133);
+  background-color: #57808e;
   z-index: 1;
   opacity: 2;
 }
 
 #navbar a {
   color: white;
-  text-decoration: none;
   font-weight: bold;
 }
 
@@ -80,6 +83,37 @@ ul {
 }
 
 .showcase-content {
-  background-color: #ef97cb;
-  margin-top: 2rem;
+  color: white;
+  background-color: #e1afda;
+  margin-top: 2.5rem;
+  width: 50%;
+  text-align: center;
+  line-height: 2;
+  padding: 2rem 0;
+}
+
+#showcase .heading {
+  font-size: 3rem;
+}
+
+#showcase .lead-text {
+  margin: 0 12rem;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#showcase .get-stated {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  background-color: #4bbbf3;
+  color: white;
+  font-family: inherit;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 3rem;
+}
+
+#showcase .showcase-image {
+  margin-right: 8rem;
 }
