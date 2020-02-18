@@ -24,6 +24,19 @@ ul {
 /* utility */
 .container {
   margin: 0 10rem;
+  text-align: center;
+}
+
+.purple-border {
+  border: 8px solid #e96ffe;
+}
+
+.yellow-border {
+  border: 8px solid #fcf335;
+}
+
+.red-border {
+  border: 8px solid #ec432e;
 }
 
 .flex-container {
@@ -32,13 +45,41 @@ ul {
   align-items: center;
 }
 
+.flex-item {
+  flex: 1;
+}
+
+.sub-heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.red {
+  color: #ec432e;
+}
+.purple {
+  color: #7865a8;
+}
+
+.bg-orange {
+  background-color: #ee642e;
+}
+
+.bg-green {
+  background-color: #76ec1a;
+}
+
+.bg-purple {
+  background-color: #7561a6;
+}
+
 .logo a {
   display: inline-block;
   /* width: 16rem; */
 }
 
 #wrapper {
-  border: 5px solid #666;
+  border: 10px solid #666;
   margin: auto;
 }
 
@@ -55,7 +96,6 @@ ul {
 }
 
 #navbar .flex-item {
-  flex: 1;
   text-align: center;
   padding: 2rem 0;
 }
@@ -74,15 +114,17 @@ ul {
   flex: 2;
 }
 
+/* Showcase */
 #showcase {
   background: #99e2fc;
+  padding-bottom: 5rem;
 }
 
 #showcase .flex-container {
   align-items: flex-start;
 }
 
-.showcase-content {
+#showcase .showcase-content {
   color: white;
   background-color: #e1afda;
   margin-top: 2.5rem;
@@ -116,4 +158,66 @@ ul {
 
 #showcase .showcase-image {
   margin-right: 8rem;
+}
+
+/* cortexgym */
+#cortexgym {
+  background-color: #99cccc;
+  padding-top: 3rem;
+}
+
+#cortexgym .create .flex-item {
+  margin: 2rem;
+}
+
+#cortexgym .create img {
+  border-radius: 10px;
+  height: 170px;
+  object-fit: cover;
+}
+
+.platform.flex-container {
+  width: 60%;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+}
+
+.platform .flex-item {
+  width: 100%;
+  flex: 1 1 20%;
+}
+
+.confidence .box {
+  margin: 2rem;
+}
+
+.box .upper {
+  height: 150px;
+  border-radius: 10px 10px 0 0;
+}
+
+.box .lower {
+  background: white;
+  /* height: 200px; */
+  width: 100%;
+  position: relative;
+  border-radius: 0 0 10px 10px;
+}
+
+.box .inner {
+  position: absolute;
+  height: 100px;
+  width: 50%;
+  border-radius: 10px;
+  transform: translate(50%, -80%);
+}
+
+.box .sub-heading {
+  padding-top: 5rem;
+}
+
+.box p {
+  text-align: center;
+  padding: 2rem;
 }
