@@ -94,6 +94,10 @@ ul {
   opacity: 2;
 }
 
+#navbar .toggleNav {
+  display: none;
+}
+
 #navbar a {
   color: white;
   font-weight: bold;
@@ -332,14 +336,124 @@ ul {
     padding: 0 3rem;
     max-width: 100%;
   }
+
+  /* Showcase */
+  #showcase {
+    background: #99e2fc;
+    padding-bottom: 5rem;
+  }
+
+  #showcase .flex-container {
+    align-items: flex-start;
+  }
+
+  #showcase .showcase-content {
+    margin-top: 1.5rem;
+    width: 50%;
+    line-height: 1.5;
+    padding: 1rem 0;
+  }
+
+  #showcase .heading {
+    font-size: 3rem;
+  }
+
+  #showcase .lead-text {
+    margin: 0 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  #showcase .showcase-image {
+    margin-right: 1rem;
+  }
+
+  .platform.flex-container {
+    width: 70%;
+  }
 }
 
-@media (max-width: 1005px) {
+@media (max-width: 950px) {
   .container {
     padding: 0 1rem;
   }
 
-  /* #footer .email-us {
-    font-size: 0.7rem;
-  } */
+  .big {
+    font-size: 3rem;
+  }
+
+  /* Navbar toggler */
+  #navbar .flex-container.on {
+    flex-direction: column;
+  }
+
+  #navbar .flex-container.off {
+    display: none;
+  }
+
+  #navbar .flex-item.logo {
+    order: 1;
+  }
+
+  #navbar .flex-item {
+    order: 20;
+    padding: 1rem;
+  }
+
+  #showcase .flex-container {
+    flex-direction: column-reverse;
+  }
+  #showcase .showcase-image {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #showcase {
+    padding-bottom: 0rem;
+  }
+
+  #showcase img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  #cortexgym .create .flex-item,
+  .confidence .box {
+    margin: 0.5rem;
+  }
+
+  #showcase .showcase-content {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  #footer .email-us {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .platform.flex-container {
+    width: 80%;
+  }
+  #navbar .toggleNav {
+    display: inline-block;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .confidence.flex-container,
+  #footer .flex-container {
+    flex-direction: column-reverse;
+  }
+
+  .heading,
+  .sub-heading {
+    font-size: 1.5rem;
+  }
+
+  .s-heading {
+    font-size: 1.3rem;
+  }
 }

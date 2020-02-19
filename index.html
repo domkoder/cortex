@@ -12,7 +12,8 @@
     <main id="wrapper">
       <nav id="navbar">
         <div class="container">
-          <ul class="flex-container">
+          <a class="toggleNav" href="#">☰ Menu</a>
+          <ul id="toggleNav" class="flex-container off">
             <li class="flex-item"><a href="#">COURSES</a></li>
             <li class="flex-item test"><a href="#">CODE PLAYGROUND</a></li>
             <li class="flex-item"><a href="#">DISCUSS</a></li>
@@ -148,5 +149,17 @@
         </div>
       </footer>
     </main>
+
+    <script>
+      document.querySelector('.toggleNav').addEventListener('click', event => {
+        let navbar = document.getElementById('toggleNav');
+        if (navbar.className === 'flex-container off') {
+          navbar.className = 'flex-container on';
+        } else {
+          navbar.className = 'flex-container off';
+        }
+        event.preventDefault();
+      });
+    </script>
   </body>
 </html>
