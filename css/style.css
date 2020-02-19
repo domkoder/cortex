@@ -392,11 +392,11 @@ ul {
   }
 
   #navbar .flex-item.logo {
-    order: 1;
+    order: 0;
   }
 
   #navbar .flex-item {
-    order: 20;
+    order: 1;
     padding: 1rem;
   }
 
@@ -455,5 +455,13 @@ ul {
 
   .s-heading {
     font-size: 1.3rem;
+  }
+
+  #wrapper {
+    border: 5px solid #666;
+  }
+
+  #cortexgym .create .flex-item {
+    margin: 0.3rem;
   }
 }
